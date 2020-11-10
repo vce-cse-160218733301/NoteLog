@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Add Log
+        </title>
+        <?php
+         include 'notestore.php';
+        ?>
+        <link href="stylesheet.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="MainSection">
+            <div class="HeaderSection">
+                <h1>ADD LOG</h1>
+            </div>
+            <div class="FormSection">
+                <form method="POST" action="./notestore.php" id="notelog">
+                    USER NAME:<input type="text" name="username" placeholder="USER NAME" required>
+                    <br>
+                    <br>
+                    DATE:<input type="date" name="edate" placeholder="DATE" required>
+                    <br>
+                    <br>
+                    TIME:<input type="time" name="etime" placeholder="TIME" required>
+                    <br>
+                    <br>
+                    WRITE LOG:
+                    <br>
+                    <textarea rows="20" cols="80" name="enote" placeholder="Enter Log...."  required></textarea>
+                    <br>
+                    <br>
+            </div> 
+            
+            <div class="FooterSection">   
+                    <input class="submit" type="submit" name="submit" value="submit">
+                    <input class="reset" type="reset" name="reset" value="reset">
+                </form>
+                <br>
+                <hr>
+                <small><strong>Already Have an Account =></strong></small>
+                <button style="font-size:20px;color:blue;border:3px solid brown;border-radius:50px;background-color:yellow;"><a href="signin.html" target="_self">SIGN IN</a></button>
+            </div>
+        </div>
+    </body>
+</html>

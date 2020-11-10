@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Note Log
+        </title>
+        <link href="./stylesheet.css" rel="stylesheet">
+        <script type="text/javascript">
+            window.history.forward();
+            function noBack()
+            {
+                window.history.forward();
+            }
+        </script>
+    </head>
+    <body onLoad="noBack();" onpageshow="if (event.persisted) noBack();" onUnload="">
+        <div class="MainSection-home">
+            <h1><strong>NOTE LOG</strong></h1>
+            <div class="HeaderSection-home">
+                <img src="./images/logo.jfif" alt="logo">
+                <button><a href="./aboutus.html" target="_self">AboutUs</a></button>
+                <button><a href="./signup.html" target="_self">SignUp</a></button>
+                <button><a href="./signin.html" target="_self">SignIn</a></button>
+            </div>
+            <div class="FormSection-home">
+            </div> 
+            <div class="FooterSection-home"> 
+                <i><strong>Copyright@2020:This site is used for list out future events.</strong></i>  
+            </div>
+        </div>
+    </body>
+</html>
